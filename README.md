@@ -17,16 +17,3 @@
 
 Установка и запуск
 Требуется Python 3.8+ и стандартный драйвер виртуального COM-порта (CH340/CH341). Соедините принтер с ПК кабелем USB-C с поддержкой передачи данных.
-
-Bash
-git clone https://github.com/your-username/ender3-v3se-studio-control.git
-cd ender3-v3se-studio-control
-pip install pyserial
-python printer_gui.py
-Сборка в автономный .exe
-Для упаковки приложения в один файл с иконкой:
-
-Bash
-pip install pyinstaller
-pyinstaller --noconsole --onefile --clean --icon="app_icon.ico" printer_gui.py
-Исполняемый файл появится в папке dist/.
